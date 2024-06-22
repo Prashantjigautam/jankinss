@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 29, 2024, 6:32:29 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <subclass name="in.co.rays.project_3.dto.PaymentDTO" extends="in.co.rays.project_3.dto.BaseDTO" discriminator-value="PaymentDTO" lazy="false">
+        <property name="bank" type="java.lang.String">
+            <column name="BANK" />
+        </property>
+        <property name="balance" type="java.lang.String">
+            <column name="BALANCE" />
+        </property>
+        <property name="PaymentMode" type="java.lang.String">
+            <column name="PAYMENTMODE" />
+        </property>
+    </subclass>
+</hibernate-mapping>

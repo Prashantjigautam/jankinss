@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 31, 2024, 2:25:10 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <subclass name="in.co.rays.project_3.dto.IssueeDTO" extends="in.co.rays.project_3.dto.BaseDTO" discriminator-value="IssueDTO" lazy="false">
+        <property name="date" type="java.util.Date">
+            <column name="DATE" />
+        </property>
+        <property name="description" type="java.lang.String">
+            <column name="DESCRIPTION" />
+        </property>
+        <property name="title" type="java.lang.String">
+            <column name="TITLE" />
+        </property>
+        <property name="assignTo" type="java.lang.String">
+            <column name="ASSIGNTO" />
+        </property>
+        <property name="status" type="java.lang.String">
+            <column name="STATUS" />
+        </property>
+    </subclass>
+</hibernate-mapping>
